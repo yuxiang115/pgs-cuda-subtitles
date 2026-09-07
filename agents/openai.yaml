@@ -1,0 +1,4 @@
+interface:
+  display_name: "PGS CUDA Subtitles"
+  short_description: "Extract PGS subtitles and OCR them in CUDA batches"
+  default_prompt: "Use $pgs-cuda-subtitles to extract the main English PGS track, OCR it with true CUDA batching, validate it, and translate it to Simplified Chinese while preserving every cue and timestamp."
