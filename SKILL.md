@@ -57,7 +57,7 @@ The script deliberately avoids calling `Reader.readtext()` once per subtitle. It
 
 ## Correct and translate
 
-Treat OCR output as a draft. Preserve a raw `*.en.ocr.srt`, then create a corrected `*.en.srt` and optional `*.zh-CN.srt`.
+Treat OCR output as a draft. Preserve a raw `*.en.ocr.srt`, then create a corrected `*.en.srt` and optional `*.zh.srt` (use the language code `zh`, not `zh-CN`, in file names).
 
 - Prioritize cues listed in `*.low-confidence.tsv`, plus empty cues and text containing unlikely symbols.
 - Correct common confusions such as `I`/`l`, stray `_`/`~`, missing spaces, doubled letters, and punctuation artifacts. Never change timing merely to fix text.
